@@ -6,9 +6,18 @@
         <link href="main.css" rel="stylesheet" />
     </head>
     <body>
+
       <div id="app">
-        <h1>{{string}}</h1>
+        <div class="person">
+          <input type="text" v-model="name">
+          <h3>{{greet()}}</h3>
+          <h3>I work as {{job}}</h3>
+        </div>
+        <pre>
+          {{$data | json }}
+        </pre>
       </div>
+
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
       <script src="app.js"></script>
     </body>
