@@ -8,9 +8,10 @@
     <body>
 
       <div id="app">
-        <ul>
-          <li v-for="person in people" :class="{'strike':!person.stillAlive}">{{person.name}}</li>
-        </ul>
+        <h2>{{counter}}</h2>
+        <button @click="counter++">+1</button>
+        <button @click="substract">-1</button>
+        <button @dblclick="counter=0">Reset</button>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
