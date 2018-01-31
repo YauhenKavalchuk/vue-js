@@ -8,11 +8,9 @@
     <body>
 
       <div id="app">
-        <input type="text" :value="name">
-        <a :href="link">Link</a>
-        <div v-html="markup">
-
-        </div>
+        <ul>
+          <li v-for="person in people" :class="{'strike':!person.stillAlive}">{{person.name}}</li>
+        </ul>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
