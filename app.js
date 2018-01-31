@@ -1,12 +1,16 @@
 new Vue({
   el: "#app",
   data: {
-    counter: 0
+
+  },
+  config: {
+    keyCodes: {
+      f2: 113
+    }
   },
   methods: {
-    substract: function(e) {
-      e.stopPropagation();
-      this.counter--;
+    changeName: function() {
+      console.log('Name is changed!');
     }
   }
 })
