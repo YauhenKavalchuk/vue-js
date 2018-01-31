@@ -4,7 +4,8 @@ new Vue({
     counter: 0
   },
   methods: {
-    substract: function() {
+    substract: function(e) {
+      e.stopPropagation();
       this.counter--;
     }
   }
