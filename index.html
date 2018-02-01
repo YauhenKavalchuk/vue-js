@@ -8,21 +8,13 @@
     <body>
 
       <div id="app">
+        <h2>{{name}}</h2>
         <label>Name:</label>
-        <input type="text" @keyup.113="changeName">
+        <input type="text" v-model="name">
+        <br>
+        <label>Checkbox value: {{checked}}</label>
+        <input type="checkbox" v-model="checked">
       </div>
-
-      <!--
-        .enter
-        .tab
-        .delete
-        .esc
-        .space
-        .up
-        .down
-        .right
-        .left
-       -->
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
       <script src="app.js"></script>
