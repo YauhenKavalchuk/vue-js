@@ -8,12 +8,12 @@
     <body>
 
       <div id="app">
-        <h2>{{name}}</h2>
-        <label>Name:</label>
-        <input type="text" v-model="name">
-        <br>
-        <label>Checkbox value: {{checked}}</label>
-        <input type="checkbox" v-model="checked">
+        <button @click="a++">Add to A</button>
+        <button @click="b++">Add to B</button>
+        <p>A - {{a}}</p>
+        <p>B - {{b}}</p>
+        <p>Age + A = {{addToA}}</p>
+        <p>Age + B = {{addToB}}</p>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
