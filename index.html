@@ -8,12 +8,11 @@
     <body>
 
       <div id="app">
-        <button @click="a++">Add to A</button>
-        <button @click="b++">Add to B</button>
-        <p>A - {{a}}</p>
-        <p>B - {{b}}</p>
-        <p>Age + A = {{addToA}}</p>
-        <p>Age + B = {{addToB}}</p>
+        <button @click="error = !error">Toggle Error</button>
+        <button @click="success = !success">Toggle Success</button>
+        <p v-if="error">Here you can see error message!</p>
+        <p v-else>Default message</p>
+        <p v-show="success">Here you can see success message!</p>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
