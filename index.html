@@ -8,11 +8,26 @@
     <body>
 
       <div id="app">
-        <button @click="error = !error">Toggle Error</button>
-        <button @click="success = !success">Toggle Success</button>
-        <p v-if="error">Here you can see error message!</p>
-        <p v-else>Default message</p>
-        <p v-show="success">Here you can see success message!</p>
+        <input type="text" @keyup.enter="addTask" v-model="currentTask">
+        <ul>
+          <li
+           v-for="task in tasks"
+           :class="{'strike': task.isCompleted}"
+           >
+           <input
+           type="text"
+           v-if="task.isEditing"
+           @keyup.enter="editTask(task.text)"
+           v-model="editValue"
+           >
+            <span
+            v-else
+            @click="task.isCompleted = !task.isCompleted"
+            >{{task.text}}</span>
+            <button @click="removeTask(task.text)">X</button>
+            <button @click="changeEditing(task.text)">*</button>
+          </li>
+        </ul>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
