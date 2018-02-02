@@ -7,27 +7,16 @@
     </head>
     <body>
 
-      <div id="app">
-        <input type="text" @keyup.enter="addTask" v-model="currentTask">
-        <ul>
-          <li
-           v-for="task in tasks"
-           :class="{'strike': task.isCompleted}"
-           >
-           <input
-           type="text"
-           v-if="task.isEditing"
-           @keyup.enter="editTask(task.text)"
-           v-model="editValue"
-           >
-            <span
-            v-else
-            @click="task.isCompleted = !task.isCompleted"
-            >{{task.text}}</span>
-            <button @click="removeTask(task.text)">X</button>
-            <button @click="changeEditing(task.text)">*</button>
-          </li>
-        </ul>
+      <div id="app-one">
+        {{title}}
+        <br>
+        {{greet}}
+      </div>
+      <div id="app-two">
+        {{title}}
+        <br>
+        {{greet}}
+        <button @click="changeTitleOne">Change title one</button>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
