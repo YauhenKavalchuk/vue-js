@@ -1,33 +1,26 @@
-var one = new Vue({
+Vue.component('greet', {
+  template: '<h2>{{title}} <button @click="changeTitle">Change title</button></h2>',
+  data: function() {
+    return {
+      title: 'Title template'
+    }
+  },
+  methods: {
+    changeTitle: function() {
+      this.title = 'Updated title!';
+    }
+  }
+});
+
+new Vue({
   el: "#app-one",
   data: {
-    title: 'Title one'
+
   },
   computed: {
-    greet: function() {
-      return 'Hello from Vue one!'
-    }
+
   },
   methods: {
 
   }
 });
-
-var two = new Vue({
-  el: "#app-two",
-  data: {
-    title: 'Title two'
-  },
-  computed: {
-    greet: function() {
-      return 'Hello from Vue two!'
-    }
-  },
-  methods: {
-    changeTitleOne: function() {
-      one.title = 'Changed from Vue two!'
-    }
-  }
-});
-
-two.title = "Changed from outside!"
