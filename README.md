@@ -30,8 +30,12 @@ git checkout lesson_02
 
 ### Список уроков:
 
-- [#0 Введение в курс (Introduction)](https://www.youtube.com/watch?v=PCOP3uC_VwY&t=1s)
-- [#1 Экземпляр Vue (The Vue Instance)](https://www.youtube.com/watch?v=k8sndt5YuCQ&t=2s)
+- [#0 Введение в курс (Introduction)](https://www.youtube.com/watch?v=PCOP3uC_VwY&t)
+- [#1 Экземпляр Vue (The Vue Instance)](https://www.youtube.com/watch?v=k8sndt5YuCQ&t)
+- [#2 Данные и методы (Data & Methods)](https://www.youtube.com/watch?v=DdmOlPKczeA&t)
+- [#3 Привязка данных (Data Binding)](https://www.youtube.com/watch?v=6R2vmO6n-Yc)
+- [#4 Списки и динамические классы (Lists & Dynamic CSS Classes)](https://www.youtube.com/watch?v=24XC6M3v57g)
+- [#5 События (Events)](https://www.youtube.com/watch?v=oMFi4Gg2gj0)
 
 ### Автор курса в социальных сетях:
 
