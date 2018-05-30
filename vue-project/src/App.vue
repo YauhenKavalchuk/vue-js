@@ -1,41 +1,27 @@
 <template>
   <div id="app">
-    <button type="button" @click="component='Reg'">Reg</button>
-    <button type="button" @click="component='Aut'">Aut</button>
-    <keep-alive>
-      <component :is="component"></component>
-    </keep-alive>
+    <Slot>
+      <h2 slot="title">{{slotTitle}}</h2>
+      <p slot="text">Test text for slot component</p>
+    </Slot>
   </div>
 </template>
 
 <script>
-import List from './components/List';
-import Aut from './components/Aut';
-import Reg from './components/Reg';
+import Slot from './components/Slot'
 
 export default {
   components: {
-    List,
-    Aut,
-    Reg
+    Slot
   },
   data() {
     return {
-      title: 'My application',
-      people: ['Max', 'Jack', 'Leo'],
-      component: 'Aut'
+      slotTitle: 'Test title for slot component'
     }
   }
 }
 </script>
 
 <style>
-  form {
-    border: 1px solid #000;
-    display: inline-block;
-    padding: 20px;
-  }
-  label {
-    display: block;
-  }
+
 </style>
