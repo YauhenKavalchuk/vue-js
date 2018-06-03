@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Inner title</h2>
+    <h2 @click="show">Inner title</h2>
     <ul>
       <li v-for="person in people">
         {{person}}
@@ -11,16 +11,22 @@
 
 <script>
 export default {
+  props: {
+    people: {
+      type: Array,
+      required: false,
+      default: [],
+    }
+  },
   data() {
     return {
-      people: ['Max', 'Jack', 'Leo']
+
+    }
+  },
+  methods: {
+    show: function() {
+      console.log(this.people);
     }
   }
 }
 </script>
-
-<style scoped>
-  h2 {
-    color: green;
-  }
-</style>

@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <h2>Outer title</h2>
-    <List/>
+    <List :people="people"/>
   </div>
 </template>
 
@@ -14,14 +13,8 @@ export default {
   },
   data() {
     return {
-
+      people: ['Max', 'Jack', 'Leo']
     }
   }
 }
 </script>
-
-<style scoped>
-  h2 {
-    color: red;
-  }
-</style>
