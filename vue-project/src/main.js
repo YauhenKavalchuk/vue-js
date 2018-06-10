@@ -7,8 +7,6 @@ import List from './components/List'
 
 Vue.config.productionTip = false
 
-// Vue.component('List', List);
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

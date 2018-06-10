@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h2 @click="show">Inner title</h2>
+    <input type="text" v-model="message" @keyup.enter="saveMessage">
+    <h2>Inner title</h2>
     <ul>
       <li v-for="person in people">
         {{person}}
@@ -20,12 +21,13 @@ export default {
   },
   data() {
     return {
-
+      message: ''
     }
   },
   methods: {
-    show: function() {
-      console.log(this.people);
+    saveMessage: function() {
+      //console.log(this.message)
+      this.$emit('message', this.message);
     }
   }
 }
