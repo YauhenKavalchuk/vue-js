@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import { bus } from '../main';
+
 export default {
   props: {
     people: {
@@ -26,8 +28,8 @@ export default {
   },
   methods: {
     saveMessage: function() {
-      //console.log(this.message)
-      this.$emit('message', this.message);
+      bus.$emit('message', this.message);
+      this.message = '';
     }
   }
 }

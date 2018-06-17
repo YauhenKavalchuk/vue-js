@@ -1,15 +1,18 @@
 <template>
   <div id="app">
+    <Header></Header>
     <List :people="people" @message="displayMessage"/>
   </div>
 </template>
 
 <script>
-import List from './components/List'
+import List from './components/List';
+import Header from './components/Header';
 
 export default {
   components: {
-    List
+    List,
+    Header,
   },
   data() {
     return {
