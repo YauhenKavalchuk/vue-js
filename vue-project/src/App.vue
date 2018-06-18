@@ -1,22 +1,20 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <List :people="people" @message="displayMessage"/>
+    <AddBlog></AddBlog>
   </div>
 </template>
 
 <script>
 import List from './components/List';
 import Header from './components/Header';
+import AddBlog from './components/AddBlog';
 
 export default {
   components: {
-    List,
-    Header,
+    AddBlog
   },
   data() {
     return {
-      people: ['Max', 'Jack', 'Leo']
     }
   },
   methods: {
