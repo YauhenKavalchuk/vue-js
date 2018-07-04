@@ -9,6 +9,14 @@ Vue.config.productionTip = false;
 
 export const bus = new Vue();
 
+// Vue.filter('to-uppercase', function(value) {
+//   return value.toUpperCase();
+// });
+
+Vue.filter('truncate', function(value) {
+  return `${value.slice(0, 10)}...`;
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

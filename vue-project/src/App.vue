@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import List from './components/List';
-import Header from './components/Header';
 import AddBlog from './components/AddBlog';
 
 export default {
