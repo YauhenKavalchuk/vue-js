@@ -1,6 +1,6 @@
 # Vue JS Tutorials
 
-В данном репозитории можно найти все необходимые комманды для запуска проектв из моего видео-курса по [Vue JS на YouTube](https://www.youtube.com/watch?v=PCOP3uC_VwY&list=PLNkWIWHIRwMH7ahn9uvvc5PG3o1tLscgB).
+В данном репозитории можно найти все необходимые комманды для запуска проектов из моего видео-курса по [Vue JS на YouTube](https://www.youtube.com/watch?v=PCOP3uC_VwY&list=PLNkWIWHIRwMH7ahn9uvvc5PG3o1tLscgB).
 
 ### Что бы начать работу с проектом:
 
